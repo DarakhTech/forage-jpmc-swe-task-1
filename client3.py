@@ -43,7 +43,10 @@ def getRatio(price_a, price_b):
     """ Get ratio of price_a and price_b """
     """ ------------- Update this function ------------- """
     if(price_b == 0):
-        return
+        if(price_a == 0):
+            return -99 
+        return -1
+    
     
     return price_a/price_b
 
